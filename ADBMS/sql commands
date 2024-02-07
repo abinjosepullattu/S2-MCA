@@ -1,0 +1,14 @@
+>sqlplus sys as sysdba
+>create table student(id number(3) primary key,name varchar(20));
+>insert into student values(&id,'&name');
+>select *from student ;
+>alter table student add address varchar(50);
+>update student set address='lgbtq',name='anandhu' where id=1;
+>alter table student modify address varchar(10);
+>delete from student where id=3;
+>alter table students rename to student;
+>alter table students rename column name to names;
+>delete from student where id=3;
+>commit;
+ 
+
